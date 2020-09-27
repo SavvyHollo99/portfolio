@@ -97,6 +97,7 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/* Homepage */
 html.homepage{
   background-color: #124559;
   background: url(https://i.postimg.cc/vHD7PxLg/portfolio8.jpg) no-repeat center center; 
@@ -333,6 +334,14 @@ div#row2b{
 /* 800px - 1100px */
 
 /* Media Queries */
+
+/* Homepage */
+
+/* About Page */
+.profile-img{
+  width: 25%;
+}
+/* About Page */
 
 /* ==========================================================================
    Helper classes
