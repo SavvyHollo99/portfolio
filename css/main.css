@@ -343,6 +343,14 @@ div#row2b{
 }
 /* About Page */
 
+/* Work Page */
+video {
+  /* override other styles to make responsive */
+  width: 50%    !important;
+  height: auto   !important;
+}
+/* Work Page */
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
