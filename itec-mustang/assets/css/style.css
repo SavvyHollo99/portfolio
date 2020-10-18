@@ -1,0 +1,275 @@
+* {
+  box-sizing: border-box;
+}
+
+
+/*Global*/
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}/*Makes the floating elements stay in the container element*/
+
+img{
+  max-width:100%;
+  height:auto;
+}/*Makes images responsive*/
+
+
+
+.align-right{
+  float:right;
+  box-shadow: 0 4px 8px rgba(0,0,0,.2);
+  padding:5px;
+  margin: 10px 10px 10px 20px;
+  border:double 4px #f1f1f1;
+  max-width:50%;
+}
+ 
+.align-left{
+  float:left;
+  box-shadow: 0 4px 8px rgba(0,0,0,.2);
+  padding:5px;
+  margin: 10px 20px 10px 10px;
+  border:double 4px #f1f1f1;
+  max-width:50%;
+}
+
+.align-center{
+  display:block;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,.2);
+}
+
+.centered{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bottom-left{ /*for bottom page*/
+  position: relative;
+  top: 60%;
+  left: 16px;
+}
+
+.centered-up{ /*for top page*/
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.b-centered-up{ /*for bottom page*/
+  position: relative;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/*@font-face {
+  font-family: GunMetal;
+  src: url("../resources/gunmetl.ttf");
+}*/
+
+nav ul li{
+  list-style-type:none;
+}
+
+nav a{
+  text-decoration:none;
+  color:#fff
+}
+
+a:link, a:visited{
+  display: block;
+  color: #fff;
+}
+/*Global*/
+
+/*Home Page*/
+html.home, body.home{
+  height:100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden; 
+  position:relative;/*This, along with the overflow-x, padding, margin, and width gets rid of the white on the side of the screen. The height is for the background image*/
+  font-size:100%;
+}
+
+.home-back{
+  height:100%;
+  background-image: url("../img/fullcloseup1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*filter: blur(3px);
+  -webkit-filter: blur(3px);*/
+  opacity:95%;
+  background-attachment: fixed;
+}
+
+.header1{
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black with opacity*/
+  color: #fff;
+  border: 3px solid #f1f1f1;
+  width: 70vw;
+  padding:10px;
+}
+
+.header1 ul{
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  margin:10px 0px;
+  font-size: 1.3rem;
+  font-family: 'Fugaz One', cursive;
+  padding:0;
+}
+
+.header1 ul li{
+  padding:0px 40px;
+  border-top:solid #f1f1f1;
+  border-bottom:solid #f1f1f1;
+}
+
+header.header1 h1, h2{
+  margin:20px;
+  text-align:center;
+  font-family: 'Fugaz One', cursive;
+  text-transform: uppercase;
+  text-shadow: 1px 1px #dad5d5;
+}
+
+header.header1 h1{
+  font-size: 3rem;
+  margin-top:10px;
+}
+
+header.header1 h2{
+  font-size: 2rem;
+}
+/*Home Page*/
+
+/*Makes and Models*/
+#models{
+  background-image:url("../img/blurredblack1.jpg");
+  background-repeat:no-repeat;
+  background-size:cover;
+  color: #fff;
+  border: 3px solid #f1f1f1;
+  padding:20px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size:1.3rem;
+}
+
+#models h6 a{
+  font-family: 'Fugaz One', cursive;
+  font-size:1.3rem;
+  color:#fff;
+  text-decoration:none;
+}
+#models h2{
+  text-transform:none;
+  text-shadow:none;
+}
+/*Makes and Models*/
+
+/*Specifications*/
+#specs{
+  background-image:url("../img/blurredblack1.jpg");
+  background-repeat:no-repeat;
+  background-size:cover;
+  color: #fff;
+  border: 3px solid #f1f1f1;
+  padding:20px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size:1.3rem;
+}
+#specs h6 a{
+  font-family: 'Fugaz One', cursive;
+  color:#fff;
+  text-decoration:none;
+  font-size:1.3rem;
+}
+
+#specs h2{
+  text-transform:none;
+  text-shadow:none;
+}
+/*Specifications*/
+
+/*Contact*/
+#contact h2, h3{
+  margin:0px;
+  text-align:center;
+  font-family: 'Fugaz One', cursive;
+  padding:10px;
+}
+
+#contact h2{
+  font-size: 2rem;
+}
+
+#contact h3{
+  font-size: 1.5rem;
+}
+
+#contact h6{
+  font-family: 'Fugaz One', cursive;
+  font-size: 1.2rem;
+  margin:0px;
+  text-align:center;
+  padding:10px;
+}
+#contact h6 a{
+  text-decoration:none;
+}
+/*Contact*/
+
+/*Footer*/
+footer.home{
+  font-family: 'Fugaz One', cursive;
+  font-size:1.3rem;
+  color:#fff;
+}
+footer.home h6{
+  margin:0;
+}
+/*Footer*/
+
+/*Contact Form*/
+
+/*Contact Form*/
+
+@media screen and (max-width: 810px) {
+  .header1 ul li {
+    border: none;
+  }
+}
+@media screen and (max-width: 810px) {
+  .header1 ul li {
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .header1 ul{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .centered-up{
+    top:50%;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .header1 ul a {
+    text-decoration:underline;
+  }
+}
