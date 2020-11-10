@@ -97,6 +97,36 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+   
+/* Global */
+.wrapper {
+  margin-right: auto; /* 1 */
+  margin-left:  auto; /* 1 */
+
+  max-width: 960px; /* 2 */
+
+  padding-right: 10px; /* 3 */
+  padding-left:  10px; /* 3 */
+}
+
+a{
+  color: #D3E6D9;
+}
+
+ a:hover,  a:active{
+  text-shadow:3px 3px #082E41;
+}
+
+ a:visited{
+  color: #D3E6D9;
+}
+
+.sub-nav{
+  padding:10px;
+  font-size:2rem;
+}
+/* Global */
+
 /* Homepage */
 html.homepage{
   background-color: #124559;
@@ -338,12 +368,159 @@ div#row2b{
 /* Homepage */
 
 /* About Page */
+html.about{
+  background: url(../img/portfolio-subback.png) no-repeat center center fixed; /* background- repeat position attachment (scroll or fixed)*/
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Roboto Slab', serif;
+  color: #D3E6D9;
+  text-shadow: 1px 1px #D95448;
+}
+
+.intro{
+  /*display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  align-content: center;
+  text-align:center;*/
+  display: grid;
+    grid-template-columns: 500px 1fr;
+    grid-template-areas:
+      "page-title page-title"
+      "profile speech"
+      "profile links";
+  font-size:1.5rem;
+}
+
+.about-title{
+  grid-area:page-title;
+  text-align:center;
+}
+
 .profile-img{
-  width: 25%;
+  grid-area:profile;
+  max-width: 65%;
+  border-radius:40%;
+  border:5px solid #D3E6D9;
+  margin:20px auto;
+}
+
+.speech{
+  grid-area:speech;
+  background-color:#D3E6D9;
+  border-radius:10%;
+  color:#D95448;
+  margin:20px 0;
+  padding:10px;
+}
+
+.about-links{
+  grid-area:links;
+}
+
+.link-section{
+  background-color:#D3E6D9;
+  border-radius:10%;
+  color:#D95448;
+  margin:20px 0;
+  padding:10px;
+}
+
+.link-section a{
+  color: #D95448;
+  text-shadow: 1px 1px #082E41;
+}
+
+ .link-section a:hover,  .link-section a:active{
+  text-shadow: 3px 3px #D3E6D9;
+}
+
+ .link-section a:visited{
+  color:#D95448;
+}
+
+.info-box{
+  background-color:#D3E6D9;
+  border-radius:10%;
+  color:#D95448;
+  display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-areas:
+      "img title"
+      "img info";
+  margin:20px 0;
+  padding:10px;
+}
+
+.info-title{
+  grid-area:title;
+  text-align:center;
+  font-size:1.5rem;
+}
+
+.info-p{
+  grid-area:info;
+  font-size:1.2rem;
+}
+
+.info-img{
+  grid-area:img;
+  max-width:80%;
+  border-radius:40%;
+  border:5px solid #D95448;
+  margin:auto;
+}
+
+@media screen and (max-width: 600px){
+  .info-box{
+  display: grid;
+    grid-template-columns:1fr;
+    grid-template-areas:
+      "img"
+      "title"
+      "info";
+  }
+
+  .info-img{
+    max-width:60%;
+  }
+
+}
+
+@media screen and (max-width: 775px){
+  .intro{
+    display: grid;
+      grid-template-columns:1fr;
+      grid-template-areas:
+        "page-title"
+        "profile"
+        "speech"
+        "links";
+    text-align:center;
+  } 
+  
+  .profile-img{
+    max-width: 65%;
+  }
 }
 /* About Page */
 
 /* Work Page */
+html.work{
+  background: url(../img/portfolio-subback.png) no-repeat center center fixed; /* background- repeat position attachment (scroll or fixed)*/
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Roboto Slab', serif;
+  color: #D3E6D9;
+  text-shadow: 1px 1px #D95448;
+}
+
 video {
   /* override other styles to make responsive */
   width: 50%    !important;
