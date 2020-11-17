@@ -100,13 +100,14 @@ textarea {
    
 /* Global */
 .wrapper {
-  margin-right: auto; /* 1 */
-  margin-left:  auto; /* 1 */
+  margin:20px auto 40px auto;
 
-  max-width: 960px; /* 2 */
+  max-width: 1050px; /* 2 */
 
-  padding-right: 10px; /* 3 */
-  padding-left:  10px; /* 3 */
+  padding:40px 10px;
+  
+ /* background-color:#D3E6D9;
+  border-radius:10%; */
 }
 
 a{
@@ -394,6 +395,10 @@ html.about{
       "profile speech"
       "profile links";
   font-size:1.5rem;
+  color:#D95448;
+  background-color:#D3E6D9;
+  border-radius:10%;
+  border:5px solid #D95448;
 }
 
 .about-title{
@@ -405,14 +410,14 @@ html.about{
   grid-area:profile;
   max-width: 65%;
   border-radius:40%;
-  border:5px solid #D3E6D9;
+  border:5px solid #D95448;
   margin:20px auto;
 }
 
 .speech{
   grid-area:speech;
-  background-color:#D3E6D9;
-  border-radius:10%;
+  /*background-color:#D3E6D9;
+  border-radius:10%;*/
   color:#D95448;
   margin:20px 0;
   padding:10px;
@@ -423,8 +428,8 @@ html.about{
 }
 
 .link-section{
-  background-color:#D3E6D9;
-  border-radius:10%;
+  /*background-color:#D3E6D9;
+  border-radius:10%;*/
   color:#D95448;
   margin:20px 0;
   padding:10px;
@@ -445,6 +450,7 @@ html.about{
 
 .info-box{
   background-color:#D3E6D9;
+  border:5px solid #D95448;
   border-radius:10%;
   color:#D95448;
   display: grid;
@@ -521,10 +527,48 @@ html.work{
   text-shadow: 1px 1px #D95448;
 }
 
-video {
+.work div.wrapper{
+  color:#D95448;
+  background-color:#D3E6D9;
+  border-radius:10%;
+  border:5px solid #D95448;
+}
+
+.work h2{
+  font-size:2.5rem;
+  text-align:center;
+  padding:10px;
+}
+
+.work h3{
+  font-size:2rem;
+  text-align:center;
+  padding:10px;
+}
+
+.work h4{
+  font-size:1.5rem;
+  padding:10px 25px;
+}
+
+.work div.wrapper a{
+  color: #D95448;
+  text-shadow: 1px 1px #082E41;
+}
+
+ .work div.wrapper a:hover,  .work div.wrapper a:active{
+  text-shadow: 3px 3px #D3E6D9;
+}
+
+ .work div.wrapper a:visited{
+  color:#D95448;
+}
+
+.work iframe {
   /* override other styles to make responsive */
-  width: 50%    !important;
+  max-width: 100%    !important;
   height: auto   !important;
+  padding:5px 40px;
 }
 /* Work Page */
 
