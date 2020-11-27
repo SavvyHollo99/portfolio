@@ -126,6 +126,12 @@ a{
   padding:10px;
   font-size:2rem;
 }
+
+.copyright{
+  font-size:1.5rem;
+  text-align:center;
+  padding:20px 0 20px 0;
+}
 /* Global */
 
 /* Homepage */
