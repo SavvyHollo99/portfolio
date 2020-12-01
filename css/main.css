@@ -575,6 +575,7 @@ html.work{
   max-width: 100%    !important;
   height: auto   !important;
   padding:5px 40px;
+  border: none;
 }
 /* Work Page */
 
