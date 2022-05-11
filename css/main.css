@@ -137,7 +137,7 @@ a{
 /* Homepage */
 html.homepage{
   background-color: #124559;
-  background: url(../img/portfolio8-min.jpg) no-repeat center center; 
+  background: url(../img/IMG_8139.JPG) no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -222,13 +222,13 @@ p.home-nav a:visited{
 div#row1a,
 div#row2a,
 div#row3a,div#row3b,
-div#row4a,div#row4b,div#row4c,
-div#row5a,div#row5b,
-div#row6a,div#row6b,div#row6c,div#row6d,div#row6e,
-div#row7a,div#row7b,div#row7c,
-div#row8a,div#row8c,
-div#row9a,div#row9b,
-div#row10a{
+div#row4a,div#row4b,div#row4c,div#row4d,div#row4e,
+div#row5a,div#row5b,div#row5c,
+div#row6a,div#row6b,div#row6c,div#row6d,div#row6e,div#row6f,
+div#row7a,div#row7b,div#row7d, div#row7e, div#row7f,
+div#row8c,
+div#row9a,div#row9b, 
+div#row10a, div#row10c,div#row10d{
   background-color:RGBA(18,69,89,0); /* RGBA(18,69,89,0.4) RGBA(217,84,72,0.2) */
   outline-color:RGBA(18,69,89,0);
 }
